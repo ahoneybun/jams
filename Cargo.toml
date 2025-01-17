@@ -1,10 +1,10 @@
 [package]
-name = "{{ project-name }}"
+name = "jams"
 version = "0.1.0"
 edition = "2021"
 license = "{{ license }}"
-description = "{{ description }}"
-repository = "{{ repository-url }}"
+description = "Music Player for the COSMIC desktop"
+repository = "https://github.com/ahoneybun/jams"
 
 [build-dependencies]
 vergen = { version = "8", features = ["git", "gitcl"] }

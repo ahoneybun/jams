@@ -67,20 +67,20 @@ impl Application for AppModel {
         let mut nav = nav_bar::Model::default();
 
         nav.insert()
-            .text(fl!("page-id", num = 1))
+            .text(fl!("songs"))
             .data::<Page>(Page::Page1)
-            .icon(icon::from_name("applications-science-symbolic"))
+            .icon(icon::from_name("folder-music-symbolic"))
             .activate();
 
         nav.insert()
-            .text(fl!("page-id", num = 2))
+            .text(fl!("albums"))
             .data::<Page>(Page::Page2)
-            .icon(icon::from_name("applications-system-symbolic"));
+            .icon(icon::from_name("folder-music-symbolic"));
 
         nav.insert()
-            .text(fl!("page-id", num = 3))
+            .text(fl!("artists"))
             .data::<Page>(Page::Page3)
-            .icon(icon::from_name("applications-games-symbolic"));
+            .icon(icon::from_name("folder-music-symbolic"));
 
         // Construct the app model with the runtime's core.
         let mut app = AppModel {
